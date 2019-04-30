@@ -1,0 +1,34 @@
+.buttonSelect {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+@media (max-width: 800px) {
+  .buttonSelect {
+    font-size: 12px;
+  }
+}
+
+.buttonSelect-text {
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+.buttonSelect-arrow {
+  width: 8px;
+  display: inline-block;
+}
+
+.buttonSelect-icon {
+  display: inline-block;
+  fill: currentColor;
+}

@@ -1,0 +1,13 @@
+.buttonIcon {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.buttonIcon-holder {
+  display: inline-block;
+  padding: 8px;
+}

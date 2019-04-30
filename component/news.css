@@ -1,0 +1,47 @@
+.news {
+  position: relative;
+  text-align: center;
+}
+
+.news-imageHolder {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1100px) {
+  .news-imageHolder {
+    margin-bottom: 16px;
+  }
+}
+
+.news-image {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.news-description {
+  display: inline-block;
+  width: 90%;
+}
+
+.news-link {
+  display: inline-block;
+  color: #2f313c;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .news-link {
+    font-size: 16px;
+  }
+}
+
+.news-link::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

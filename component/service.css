@@ -1,0 +1,93 @@
+.service {
+  padding: 48px 48px 40px;
+  font-size: 20px;
+}
+
+@media (max-width: 496px) {
+  .service {
+    padding: 16px 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service {
+    padding: 16px 20px;
+  }
+}
+
+.service-title {
+  margin: 0;
+  margin-bottom: 32px;
+  line-height: 1.2;
+  color: #383e5e;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .service-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+
+.service-imageHolder {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+  .service-imageHolder {
+    margin-bottom: 16px;
+  }
+}
+
+.service-image {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.service-linkHolder {
+}
+
+.service-link {
+  position: relative;
+  color: #383e5e;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .service-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-link {
+    font-size: 12px;
+  }
+}
+
+.service-link::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  border-top: 1px solid #383e5e;
+  transition: opacity 0.1s ease-out;
+}
+
+.service-link:focus {
+}
+
+.service-link:hover {
+}
+
+.service-link:hover::before {
+  opacity: 0;
+}
+
+.service-link:active {
+}

@@ -1,0 +1,148 @@
+.servicesPresentation {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation {
+    flex-direction: column;
+  }
+}
+
+.servicesPresentation-about {
+  flex: 0 1 auto;
+  padding: 72px 100px 64px 48px;
+  background-color: #383e5e;
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation-about {
+    flex: 1 1 auto;
+    width: 80%;
+    padding: 32px;
+    text-align: center;
+  }
+}
+
+.servicesPresentation-aboutTitle {
+  margin: 0;
+  margin-bottom: 456px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 1900px) {
+  .servicesPresentation-aboutTitle {
+    margin-bottom: 262px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation-aboutTitle {
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation-aboutTitle {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesPresentation-aboutTitle {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.servicesPresentation-aboutLinkHolder {
+}
+
+.servicesPresentation-aboutLink {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.servicesPresentation-aboutLink::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  border-top: 1px solid #fff;
+  transition: opacity 0.1s ease-out;
+}
+
+.servicesPresentation-aboutLink:focus {
+}
+
+.servicesPresentation-aboutLink:hover {
+}
+
+.servicesPresentation-aboutLink:hover::before {
+  opacity: 0;
+}
+
+.servicesPresentation-aboutLink:active {
+}
+
+@media (max-width: 480px) {
+  .servicesPresentation-aboutLink {
+    font-size: 12px;
+  }
+}
+
+.servicesPresentation-list {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: solid 2px #eceded;
+  border-left: none;
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation-list {
+    width: 70%;
+    flex-direction: column;
+    border: solid 2px #eceded;
+  }
+}
+
+.servicesPresentation-item {
+  flex: 1 1 auto;
+  list-style: none;
+  border-right: solid 2px #eceded;
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation-item {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+    border-bottom: solid 2px #eceded;
+  }
+}
+
+@media (max-width: 1100px) {
+  .servicesPresentation-item:last-child {
+    border-bottom: none;
+  }
+}
+
+.servicesPresentation-item:last-child {
+  border-right: none;
+}
