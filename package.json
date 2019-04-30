@@ -1,15 +1,21 @@
 {
   "name": "landing-test",
   "version": "1.0.0",
+  "private": true,
+  "homepage": "https://lyashyk.github.io/test-landing/",
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "parcel-bundler": "^1.12.3"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
